@@ -13,14 +13,14 @@ project_1_page = st.Page(
     icon = ":material/smart_toy:",
 )
 project_2_page = st.Page(
-    "views/ai_web_scraper",
+    "views/ai_web_scraper.py",
     title = "AI Web Scraper",
-    iron = ":material/search:"
+    icon = ":material/search:"
 )
 pg = st.navigation(
     {
         "Info": [about_page],
-        "Projects": [project_1_page],
+        "Projects": [project_1_page, project_2_page] 
     }
 )
 st.sidebar.text("Made with ❤️ by Mati")
