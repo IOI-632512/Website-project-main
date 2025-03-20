@@ -17,10 +17,15 @@ project_2_page = st.Page(
     title = "AI Web Scraper",
     icon = ":material/search:"
 )
+project_3_page = st.Page(
+    "views/pdf_to_png.py",
+    title = "PDF to PNG Converter",
+    icon = ":material/picture_as_pdf:"
+)
 pg = st.navigation(
     {
         "Info": [about_page],
-        "Projects": [project_1_page, project_2_page] 
+        "Projects": [project_1_page, project_2_page, project_3_page] 
     }
 )
 st.sidebar.text("Made with ❤️ by Mati")
